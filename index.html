@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringi - metody, zadania</title>
+</head>
+
+<body>
+    <script>
+        //----------------Czy jest mężczyzną czy kobietą---------------------------------------------------------------------------
+let imie = prompt('podaj imie');
+        imie=imie.toLocaleLowerCase();
+        if(imie=="kuba")
+        {
+            alert("jesteś mężczyzną");
+            
+        }
+        else if (imie.endsWith("a"))
+        {
+            alert("jesteś dziewczyną");
+           
+        }
+        else
+        {
+            alert("jesteś mężczyzną");
+           
+        }
+        //---------------Zamiana na wielka i mała litere-------------------------------------------------------
+        let malej=prompt('podaj tekst');
+        malej=malej.toLocaleLowerCase();
+        let wielkosc;
+        wielkosc=malej.toUpperCase();
+        alert( malej);
+        alert( wielkosc);
+      //--------------------powtórzenie wyrazu----------------------------------------------------
+ let powtorka=prompt('podaj słowo do powtórzenia:');
+ 
+ powtorka=powtorka.repeat(3);
+ alert(powtorka);
+ //-------------zamiana wyrazu-------------------------------------------------
+ let tekst1;
+let tekst=prompt("Wpisz ala ma kota");
+if(tekst=="ala ma kota"){
+tekst=tekst.toUpperCase();
+tekst1 = tekst.replace("ALA", "PAN");
+tekst1=tekst1.toLocaleLowerCase();
+alert(tekst1);
+}
+else{
+    prompt("Wpisz ala ma kota");
+}
+
+    </script>
+
+</body>
+
+</html>
